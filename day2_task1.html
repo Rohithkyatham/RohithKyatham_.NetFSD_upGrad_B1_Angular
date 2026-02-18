@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeWave Technologies</title>
+    <meta name="description" content="CodeWave Technologies - Web, AI and Cloud Solutions">
+    <meta name="keywords" content="Web Development, AI Solutions, Cloud Services">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>CodeWave Technologies</h1>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#testimonials">Testimonials</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            CodeWave Technologies is a startup company providing modern
+            web, AI, and cloud-based solutions for businesses.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <article>
+            <h3>Web Development</h3>
+            <p>Responsive and modern websites.</p>
+        </article>
+
+        <article>
+            <h3>AI Solutions</h3>
+            <p>Machine learning and data analytics services.</p>
+        </article>
+
+        <article>
+            <h3>Cloud Services</h3>
+            <p>Secure and scalable cloud deployment.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Company Introduction Video</h2>
+
+        <video controls width="400" poster="poster.jpg">
+            <source src="intro.mp4" type="video/mp4">
+            <source src="intro.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- Newsletter Form -->
+    <section>
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <form>
+
+            <!-- Email validation -->
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <!-- Preferred contact time -->
+            <label>Preferred Contact Time:</label><br>
+            <input type="time" name="contact_time" required><br><br>
+
+            <!-- Service Interest using datalist -->
+            <label>Select Service Interest:</label><br>
+            <input list="servicesList" name="service" required>
+
+            <datalist id="servicesList">
+                <option value="Web Development">
+                <option value="AI Solutions">
+                <option value="Cloud Services">
+            </datalist>
+            <br><br>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+
+        <blockquote>
+            "CodeWave built our website professionally!" – Client A
+        </blockquote>
+
+        <blockquote>
+            "Excellent AI solutions and support." – Client B
+        </blockquote>
+    </section>
+
+    <hr>
+
+    <!-- Background Audio -->
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        <source src="music.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@codewave.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>© 2026 CodeWave Technologies</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Appointment Booking</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Hospital Appointment System</h1>
+</header>
+
+<section>
+    <h2>Book an Appointment</h2>
+
+    <form>
+
+        <!-- Department with suggestions -->
+        <label>Department:</label><br>
+        <input list="departments" name="department" required>
+
+        <datalist id="departments">
+            <option value="Cardiology">
+            <option value="Neurology">
+            <option value="Orthopedics">
+            <option value="Pediatrics">
+            <option value="Dermatology">
+        </datalist>
+        <br><br>
+
+        <!-- Doctor (custom allowed) -->
+        <label>Preferred Doctor:</label><br>
+        <input type="text" name="doctor" placeholder="Enter doctor name" required>
+        <br><br>
+
+        <!-- Age -->
+        <label>Age:</label><br>
+        <input type="number" name="age" min="1" max="120" required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <!-- Phone number (exactly 10 digits) -->
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"
+               pattern="[0-9]{10}"
+               maxlength="10"
+               placeholder="10 digit number"
+               required>
+        <br><br>
+
+        <!-- Appointment Date (no past date) -->
+        <label>Appointment Date:</label><br>
+        <input type="date" name="date" min="2026-02-18" required>
+        <br><br>
+
+        <!-- Appointment Time -->
+        <label>Appointment Time:</label><br>
+        <input type="time" name="time" id="timeField" required>
+        <br><br>
+
+        <!-- Emergency Checkbox -->
+        <label>
+            <input type="checkbox" onclick="document.getElementById('timeField').disabled = this.checked;">
+            Emergency Case
+        </label>
+        <br><br>
+
+        <!-- Medical Reports Upload -->
+        <label>Upload Medical Reports:</label><br>
+        <input type="file" name="reports" multiple>
+        <br><br>
+
+        <input type="submit" value="Book Appointment">
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 City Hospital</p>
+</footer>
+
+</body>
+</html>

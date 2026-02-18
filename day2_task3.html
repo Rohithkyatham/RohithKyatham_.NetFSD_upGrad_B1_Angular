@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning Course Registration</title>
+</head>
+
+<body>
+
+<header>
+    <h1>E-Learning Course Registration Portal</h1>
+</header>
+
+<section>
+    <h2>Course Introduction</h2>
+
+    <!-- Introduction Video -->
+    <video width="400" controls required>
+        <source src="intro.mp4" type="video/mp4">
+        <source src="intro.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<hr>
+
+<section>
+    <h2>Register for Course</h2>
+
+    <form>
+
+        <!-- Student Name -->
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <!-- Course Selection with Auto-Suggestions -->
+        <label>Select Course:</label><br>
+        <input list="courses" name="course" required>
+
+        <datalist id="courses">
+            <option value="Full Stack Development">
+            <option value="Data Science">
+            <option value="Machine Learning">
+            <option value="Cloud Computing">
+            <option value="Cyber Security">
+        </datalist>
+        <br><br>
+
+        <!-- Batch Month -->
+        <label>Select Batch Month:</label><br>
+        <input type="month" name="batch" required>
+        <br><br>
+
+        <!-- Session Timing -->
+        <label>Preferred Session Timing:</label><br>
+        <select name="session" required>
+            <option value="">--Select--</option>
+            <option>Morning (9 AM - 11 AM)</option>
+            <option>Afternoon (1 PM - 3 PM)</option>
+            <option>Evening (6 PM - 8 PM)</option>
+        </select>
+        <br><br>
+
+        <!-- Skill Level Rating -->
+        <label>Rate Your Skill Level (1-10):</label><br>
+        <input type="range" name="skill" min="1" max="10">
+        <br><br>
+
+        <input type="submit" value="Enroll Now">
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 E-Learning Platform</p>
+</footer>
+
+</body>
+</html>
